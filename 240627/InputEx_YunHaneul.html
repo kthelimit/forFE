@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ul {
+      list-style: none;
+      padding: 0px;
+      margin: 8px 2px;
+    }
+
+    fieldset {
+      padding: 0px 10px;
+      margin: 5px 0px;
+    }
+  </style>
+</head>
+<body>
+  <form action="">
+    <fieldset>
+      <legend>로그인</legend>
+      <ul>
+        <li>
+          <label for="user-id">아이디 : </label>
+          <input type="text" size="20" placeholder="coke">
+        </li>
+        <li>
+          <label for="user-pwd">비밀번호 : </label>
+          <input type="password" size="20" placeholder="비밀번호를 입력하세요.">
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset>
+      <legend>선택 요소</legend>
+      <ul>
+        <li>
+          성별 :
+          <label><input type="radio" name="gender" value="man">남</label>
+          <label><input type="radio" name="gender" value="woman" checked>여</label>
+        </li>
+        <li>
+          알레르기 :
+          <label><input type="checkbox" value="flower">꽃가루 알레르기</label>
+          <label><input type="checkbox" value="peach" checked>복숭아 알레르기</label>
+          <label><input type="checkbox" value="cucumber">오이 알레르기</label>
+          <label><input type="checkbox" value="pineapple" checked>파인애플 알레르기</label>
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset>
+      <legend>input이 아닌 태그</legend>
+      <ul>
+        <li>
+          <label for="memo">하고 싶은 말</label>
+          <textarea id="memo" cols="25" rows="9">반갑습니다.</textarea>
+        </li>
+        <li>
+          <label for="game">좋아하는 게임 1개만</label>
+          <select size="3">
+            <option value="lol">롤</option>
+            <option value="overwatch">오버워치</option>
+            <option value="battleground" selected>배틀그라운드</option>
+          </select>
+        </li>
+        <li>
+          <input type="file">
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset>
+      <legend>기타 입력요소</legend>
+      <ul>
+        <li>
+          <label for="shoes-size">신발사이즈</label>
+          <input type="text" size="5" id="shoes-size">
+          <label for="height">키</label>
+          <input type="text" size="5" id="height">
+          <label for="star-count">별점</label>
+          <input type="range" min="1" max="5" id="star-count">
+          <label for="color">색상</label>
+          <input type="color">
+        </li>
+        <li>
+          <label for="date">날짜</label>
+          <input type="date" id="date">
+          <label for="time">시간</label>
+          <input type="time" id="time">
+        </li>
+      </ul>
+    </fieldset>
+    <div id="buttons">
+      <input type="submit" value="로그인(input)">
+      <input type="reset" value="다시 작성(input)">
+      <input type="button" value="누르지 마세요.(input)">
+      <button type="submit">로그인2(button)</button>
+      <button type="reset">다시 작성 2 (button)</button>
+      <button>누르지 마세요. (button)</button>
+    </div>
+  </form>
+</body>
+</html>
