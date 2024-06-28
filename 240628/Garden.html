@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가든</title>
+  <style>
+    #container {
+      width: 500px;
+      margin: 10px auto;
+    }
+    #intro {
+      width: 120px;
+      background-color: green;
+      color: white;
+      padding: 10px 20px;
+      box-shadow: 3px 3px 10px #171010;
+    }
+    #p1 {
+      line-height: 150%;
+    }
+    .p2 {
+      border: solid 1px #ccc;
+      padding: 20px;
+      line-height: 200%;   
+    }
+    ul.dash {
+      list-style: none;
+      margin-left: 0;
+      padding-left: 2em;
+    }
+    ul.dash > li:before {
+      display: inline-block;
+      content: "-";
+      width: 1em;
+      margin-left: -1em;
+      }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h3 id="intro">테마가든 안내</h3>
+    <p id="p1">복잡한 도심에서 여유로운 휴식을 즐길 수 있는 나만의 공간,
+      따뜻한 시골 고향이 정서를 듬뿍 담은 유실수로 조성된 고향정원,
+      동물의 보금자리로 조성된 어린이 동물원을 관람할 수 있는 테마가든에서
+      사랑하는 연인과 가족, 친구와 멋진 추억을 만들어 보세요.</p>
+    <h3>관람 안내</h3>
+    <ul class="dash p2">
+      <li>이용료 : 무료 입장</li>
+      <li>볼거리 : 장미 축제, 주제 정원, 이벤트 정원, 동물과 놀아주기</li>
+      <li>이용 시간 : 10:00 ~ 17:00</li>
+    </ul>
+  </div>
+</body>
+</html>
