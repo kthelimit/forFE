@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>박스모델</title>
+  <style>
+    div{
+      /* border: 5px groove aqua; */
+      border: 2px solid #000;
+      margin: 10px 10px 20px;
+    }
+    .box1{
+      width: 400px;
+      height: 100px;
+      box-sizing: border-box;
+      box-shadow: 2px -2px 5px 0px;
+    }
+    .box2{
+      width: 50%;
+      height: 100px;
+      box-shadow: 5px 5px 15px 5px blue;
+    }
+  </style>
+</head>
+<body>
+  <div class="box1">컨텐츠 내용</div>
+  <div class="box2"></div>
+</body>
+</html>
