@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #344A72;
+      text-align: center;
+    }
+
+    ul {
+      text-align: left;
+      color: #777;
+      font-weight: bold;
+      list-style: none;
+    }
+
+    li {
+      padding: 10px;
+    }
+
+    #container {
+      background-color: white;
+      width: 450px;
+      margin: 10px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      padding: 5px;
+    }
+
+    input {
+      margin-top: 5px;
+      width: 100%;
+      height: 35px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .bluetext {
+      color: blue;
+    }
+
+    .buttonbg {
+      margin-top: 10px;
+      background-color: #49C1A2;
+      color: white;
+      width: 100%;
+      height: 40px;
+    }
+
+    .smalltext {
+      text-align: center;
+      line-height: 150%;
+      font-size: small;
+      color: #777;
+      padding: 0 40px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <form>
+      <h1>회원가입</h1>
+      <p style="color: #777;"><b>회원 정보를 입력하세요</b></p>
+      <ul>
+        <li>
+          <label for="fname">First Name</label><br>
+          <input type="text" id="fname" width="400px" required>
+        </li>
+        <li>
+          <label for="lname">Last Name</label><br>
+          <input type="text" id="lname" required>
+        </li>
+        <li>
+          <label for="mail">Email</label><br>
+          <input type="email" id="mail" required>
+        </li>
+        <li>
+          <label for="user_pwd">Password</label><br>
+          <input type="password" id="user_pwd" required>
+        </li>
+        <li>
+          <label for="user_pwd2">Confirm Password</label><br>
+          <input type="password" id="user_pwd2" required>
+        </li>
+        <li>
+          <button type="submit" class="buttonbg">회원가입</button>
+        </li>
+        <li>
+          <div class="smalltext">By clicking the Sign Up button, you agree to our <span class="bluetext">Terms &
+              Conditions</span>
+            and <span class="bluetext"> Privacy Policy</span></div>
+        </li>
+  </div>
+  </form>
+  <div style="color: white;">Already have an account? <a href=""
+      style="color:#49C1A2; text-decoration: none;">로그인하러가기</a></div>
+</body>
+
+</html>
