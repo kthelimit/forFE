@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#container {
+  width: 960px;
+  margin: 20px auto;
+}
+header {
+  width: 100%;
+  padding-left: 30px;
+  margin-top: 20px;
+}
+#section1 {
+  float: left;
+  width: 800px;
+  height: 250px;
+}
+#inner-section{
+  float: left;
+  width: 500px;
+}
+#section2 {
+  float: left;
+  width: 160px;
+  height: 250px;
+}
+article article{
+  padding: 30px;
+}
+aside {
+  float: left;
+  width: 300px;
+  padding: 30px;
+  font-size: 1.2em;
+}
+ul{
+  padding-top: 20px;
+}
+#section2 ul{
+  padding-left: 40px;
+}
+footer {
+  clear: left; 
+  text-align: center;
+}
+article footer{
+  text-align: left;
+  padding-left: 30px;
+}
+header ul,
+footer ul {
+  list-style: none;
+}
+header ul li,
+footer ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
