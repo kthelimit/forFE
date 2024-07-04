@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>Animation</title>
+	<style>
+		#container{
+			width: 500px;
+			margin: 20px auto;
+		}
+		.box{
+			width: 100px;
+			height: 100px;
+			float: left;
+			margin: 50px;
+		}
+		#box1 {
+			background-color: #4cff00;
+			border: 1px solid transparent;			/* 일단 속성이 있어야 변형시킬 수 있어서 투명도 일부러 선언해둠 */
+			animation-name: shape;			/* 애니메이션 지정 */
+			animation-duration: 3s;			/* 애니메이션 실행 시간 */
+			animation-iteration-count: infinite;			/* 애니메이션 무한반복 */
+			animation-direction: alternate;			/* 애니메이션 끝나면 되감기 */
+		}
+		#box2 {
+			background-color: #8f06b0;
+			border: 1px solid transparent;
+			/* animation-name: rotate; */
+			animation: rotate 1.5s alternate infinite, shape 1.5s alternate infinite;
+			/* animation-duration: 3s;			
+			animation-direction: alternate;
+			animation-iteration-count: infinite; */
+		}
+		@keyframes shape{
+			0% {border : 1px solid transparent;}
+			100%{
+				border: 1px solid#000;
+				border-radius: 50%;
+			}
+		}
+		@keyframes rotate{
+			from{transform: rotate(0deg);}
+			to{transform: rotate(45deg);}
+		}
+
+		/* @keyframes rotate{
+			0% {border : 1px solid transparent;}
+			50%{
+				border: 1px solid#000;
+				border-radius: 50%;
+			}
+			75%{transform: rotate(0deg);}
+			100%{transform: rotate(45deg);}
+		} */
+		
+	</style>
+</head>
+
+<body>
+	<div id="container">
+		<div class="box" id="box1"></div>
+		<div class="box" id="box2"></div>
+	</div>
+</body>
+</html>
