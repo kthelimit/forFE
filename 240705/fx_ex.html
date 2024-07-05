@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>내장함수 연습</title>
+</head>
+<body>
+  <script>
+    // alert("안녕하세요?");
+    //"안녕하세요"가 alert라는 함수의 인수다.
+    //끝날때 세미콜론(;)을 꼭 입력해줘야한다.
+    //주석 단축키는 같은 프로그램이라 똑같은거 같은데 언어에 따라 주석처리방법이 다르다...<-- -->, /**/, //의 차이..?
+    
+    // var reply = confirm("정말 배경이미지를 바꾸겠습니까?");
+    //var 변수 선언인데 어떤 값을 담는 그릇임. 지금은 boolean이다.
+    //마우스를 가져다대면 무슨 변수인지 뜬다.
+    
+    document.write("<h1>어서오세요.</h1>");
+    var name = prompt("이름을 입력하세요.", "아무개");
+    document.write("<b><big>"+name+"</big></b>님 환영합니다.");
+    //취소 누르니까 null이 되고, 아무것도 입력을 안하면 그냥 아무것도 없는 텍스트가 됨.
+    //텍스트를 입력하면 그것이 저장된다.
+    console.log(name+"님, 환영합니다.");
+    //콘솔은 태그를 못쓴다.
+    
+  </script>
+</body>
+</html>
