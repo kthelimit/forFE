@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <input type="button" value="확인" onclick="answer_check()">
+  <br>
+  <div id=try_count></div>
+  <button id = "subscriberBtn" type="button" onclick="change()">구독</button>
+
+  <script>
+    var total_count = 0;
+    function answer_check() {
+      this.total_count++;
+      document.querySelector("#try_count").innerHTML = total_count+"번 클릭하셨습니다.";
+    }
+    function change(){
+      let subs = document.getElementById('subscriberBtn');
+      if(subs.innerText==='구독'){
+        subs.innerText='구독중';
+      }else{
+        subs.innerText='구독';
+      }
+    }
+  </script>
+
+</body>
+
+</html>

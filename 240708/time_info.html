@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // let time = prompt("현재 시간을 입력하세요.(24시간 형식. 예: 오후 1시 -> 13시)");
+    const date = new Date();
+    const hour = date.getHours();
+    let str;
+    if (hour <= 24 && hour > 5) {
+      if (hour < 11) {
+        str = '아침';
+      } else if (hour < 14) {
+        str = '점심';
+      } else {
+        str = '저녁';
+      }
+      alert(str + " 먹을 시간입니다.");
+    }
+    else {
+      alert("밥을 먹을 시간이 아닙니다.");
+    }
+  </script>
+</body>
+</html>
