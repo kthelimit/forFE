@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>for 문</title>
+</head>
+<body>
+  <h3>for 문으로 10px~35px 크기 출력</h3>
+  <hr>
+  <script>
+    for (let size = 10; size <= 35; size += 5) {
+      // document.write("span ");
+      // document.write("style = 'font-size:" + size + "px'>");
+      // document.write(size + "px");
+      // document.write("</span>");
+      document.write("<span style = 'font-size:" + size + "px'>" + size + "px</span>");
+      // <span style = 'font-size: 10px'>10px</span> 
+      //원래는 이 모양인데 size라는 변수를 2번 넣기 위해 이렇게 표현한 것임
+    }
+  </script>
+</body>
+</html>

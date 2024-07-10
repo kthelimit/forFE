@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>3으로 나눈 나머지가 1인 수만 더하기</h2>
+  <hr>
+  <script>
+    let n = prompt("몇까지 더할건데?");
+    let sum = 0;
+    for (let i = 1; i <= n; i++) {
+      if (i % 3 != 1) { //3으로 나눈 나머지가 1이 아니라면
+        continue; //다음 반복문으로 점프한다.
+      }
+      sum += i;
+      document.write(i + " ");
+    }
+    document.write("합은 " + sum);    
+  </script>
+</body>
+</html>
