@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var now = new Date();
+    document.write("현재 시각은 "+now);   //현재 날짜와 시간 표시(세계표준표기법인듯)
+    document.write('<br>');
+    document.write("현재 시각은 "+now.toLocaleString()); //Local에 맞추어서 날짜와 시간 표시하기
+  </script>
+</body>
+</html>

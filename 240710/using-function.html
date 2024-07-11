@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>함수</title>
+</head>
+<body>
+  <script>
+    //즉시 실행함수
+    (function(){
+      alert("배가 고프다");
+    }());
+
+    (function(a, b){
+      alert(a+b);
+    }(100,200));
+
+    //익명 함수
+    let sum = function(a,b){
+      return a+b;
+    }
+    document.write("함수 실행 결과 : " + sum(10,20));
+
+    //화살표 함수
+    const hi = ()=>alert("안녕하세요");
+    hi();
+    let hi2 = user=>{document.write(user+"님 안녕하세요.")};
+    hi2();
+    // addNumber(589625,698574);
+    // multiNumber(895,568);
+    // function addNumber(){
+    //   let num1 = 2;
+    //   let num2 = 3;
+    //   let sum = num1 + num2;
+    //   alert("결괏괎 : " + sum);
+    // }
+
+    // let result = addNumber(55, 74);
+    // document.write("두 수를 더한 값 : " + result);
+   
+    // function addNumber(num1, num2) {
+    //   let sum = num1 + num2;
+    //   return sum;
+    //   // alert("결괏괎 : " + sum);
+    // }
+
+    // function multiNumber(num1, num2) {
+    //   let multi1 = num1 * num2;
+    //   multi2 = num1 * num2;
+    //   alert("결괏괎 : " + multi);
+    // }
+    // alert("결괏괎 : " + multi2);
+
+  </script>
+</body>
+
+</html>

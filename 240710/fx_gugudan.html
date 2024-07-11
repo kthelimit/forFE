@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>구구단 함수</title>
+  <style>
+    div{      
+      margin: 10px auto;
+      border: 1px solid #ccc;
+      display: inline-block;
+      padding: 0 20px 30px;
+      line-height: 2.0;
+    }
+    h3{
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }    
+  </style>
+</head>
+<body>
+  <script>
+    let userNumber=prompt("구구단 몇 단을 원하세요");
+    gugudan(userNumber);
+    function gugudan(n){
+      let m = parseInt(n);
+      if(isNaN(m) || m<1||m>9){
+        alert("잘못 입력하셨습니다.");
+        return;
+      }
+      document.write("<div>");
+      document.write(`<h3>${m}단</h3>`);
+      for(let i = 1; i<=9;i++){
+        document.write(m + " × "+ i + " = " + m*i+"<br>");
+      }
+      document.write("</div>");
+    }
+  </script>
+</body>
+</html>

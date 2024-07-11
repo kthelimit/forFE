@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1부터 n까지 더하기</title>
+</head>
+<body>
+  <script>
+    let userNumber = prompt("얼마까지 더할까요?");
+    calcSum(userNumber);
+    //1부터 n까지 더하고 결과값 출력도 해주자.
+    function calcSum(n) {
+      let sum = 0;
+      for (let i = 1; i <= n; i++) {
+        sum += i;
+      }
+      // document.write("1부터 " + n + "까지 더하면 " + sum);
+      document.write(`1부터 ${n}까지 더하면 ${sum}`);
+    }
+  </script>
+</body>
+</html>
